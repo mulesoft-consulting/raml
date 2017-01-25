@@ -1,0 +1,12 @@
+#%RAML 1.0 DataType
+properties: 
+  label: 
+    type: string
+    example: "1001"
+  details: 
+    type: string
+    example:  "https://pfj360dev.pilotcorp.net/ebx-dataservices/rest/data/v1/BParking/Parking/root/Parking/PrimeParking/1001"
+  PrimeParkingSystemID: !include systemID.raml
+  ParkingSystemID: !include systemID.raml
+  LineOfBusinessSystemID: !include systemID.raml
+  PrimeParkingLabel: !include systemID.raml

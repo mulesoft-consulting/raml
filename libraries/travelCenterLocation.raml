@@ -1,0 +1,19 @@
+#%RAML 1.0 DataType
+properties: 
+  LocationId?: integer
+  Description?: string
+  Interstate?: string
+  Address: !include address.raml
+  Phone?: !include http://52.23.199.200:7070/ramlTypes/phone.raml
+  Fax?: !include http://52.23.199.200:7070/ramlTypes/phone.raml
+  OpenDate?: string
+  CloseDate?: string
+  FuelPrices: 
+    type: array
+    items: !include http://52.23.199.200:7070/ramlTypes/fuelPrice.raml
+  Currency?: string
+  IntendedBioBlend?: string
+  IsTempClosed?: boolean
+  HasMobileFueling?: boolean
+  HasTaxExemptDiesel?: boolean
+  LocationBrandingURL?: string

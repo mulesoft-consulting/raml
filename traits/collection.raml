@@ -1,0 +1,43 @@
+#%RAML 1.0 Trait
+# this is a RAML 1.0 trait fragment indicated by its first line
+queryParameters:
+  maxResults:
+    description: The maximum number of entries to return. This is optional.
+    type: integer
+    required: false
+    example: 25
+  startDateTime:
+    description: DateTime to pull from.
+    type: datetime
+    required: false
+    example: 2016-02-28T16:41:41.090Z
+  startIndex:
+    description: The 1-based index of the first result to be retrieved (for paging).
+    type: integer
+    required: false
+    example: 1
+  orderBy-direction:
+    description: Get Result order by a field
+    type: string
+    required: false
+    example: name:ascending
+  groupBy:
+    description: Constrains the results to only the contacts belonging to the group specified. Value of this parameter specifies group ID
+    required: false
+  showDeleted:
+    description: Include deleted contacts in the returned contacts feed.
+    type: boolean
+    required: false
+    example: false
+  firstPage:
+    type: string
+    required: false
+  previousPage:
+    type: string
+    required: false
+  nextPage:
+    type: string
+    required: false
+  lastPage:
+    type: string
+    required: false

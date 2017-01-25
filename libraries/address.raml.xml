@@ -1,0 +1,46 @@
+#%RAML 1.0 DataType
+    properties:
+      Type: 
+        type: string
+        required: false
+        enum: [ Home, Work, HQ, Parking ]
+        default: Home
+        example: Home
+      Street: 
+        type: string
+        required: false
+        example: 257 Stone Park Drive
+      Street2: 
+        type: string
+        required: false
+      City: 
+        type: string
+        required: false
+        example: Woodstock
+      StateProvince: 
+        type: string
+        required: false
+        example: GA
+      PostalCode: 
+        type: string
+        required: false
+        example: "30188"
+      CountryCode: 
+        type: string
+        required: false
+        maxLength: 3
+        example: USA
+      Latitude: 
+        type: nil | number
+        required: false
+        example: 34.134439
+      Longitude: 
+        type: nil | number
+        required: false
+        example: -84.497129
+      MapURL: 
+        type: array
+        required: false
+        items: !include mapUrl.raml
+	  Interstate: string
+		

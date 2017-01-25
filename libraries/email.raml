@@ -1,0 +1,12 @@
+#%RAML 1.0 DataType
+    properties:
+      Type: string
+      Address: 
+        type: string
+        #pattern: "[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+        example: brettroeder@company.com
+      Preferred: 
+        type: boolean
+        required: true
+        default: false
+        example: false

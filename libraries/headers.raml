@@ -1,0 +1,10 @@
+#%RAML 1.0 Trait
+headers:
+  content-type: 
+    description: This is the format for what the API sends
+    enum: [ application/json, application/xml ]
+    default: application/json
+  Accept: 
+    description: This is the format for what the API receives
+    enum: [ application/json, application/xml ]
+    default: application/json
